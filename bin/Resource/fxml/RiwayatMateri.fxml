@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="RiwayatMateri" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginPeserta.RiwayatPesertaController">
+   <children>
+      <Pane layoutX="-9.0" layoutY="-1.0" prefHeight="744.0" prefWidth="1551.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="9.0" layoutY="1.0" prefHeight="88.0" prefWidth="1540.0" style="-fx-background-color: #658147;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="234.0" style="-fx-background-color: #658147;" text="EcoCareer" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Md BT Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="37.0" prefWidth="0.0" />
+                  <Pane prefHeight="74.0" prefWidth="634.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextField layoutX="31.0" layoutY="22.0" maxWidth="-Infinity" prefHeight="45.0" prefWidth="187.0" promptText="Pencarian" styleClass="pencarian" stylesheets="@../style/style.css">
+                           <font>
+                              <Font name="SansSerif Bold" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="88.0" prefWidth="241.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: trasnparatn;" text="Nama Peserta" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif" size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/profil%20v.2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane layoutX="247.0" layoutY="93.0" prefHeight="707.0" prefWidth="1302.0" style="-fx-background-color: #fafafa;">
+               <children>
+                  <HBox layoutX="14.0" layoutY="5.0" prefHeight="45.0" prefWidth="585.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="225.0" style="-fx-background-color: transparent;" text="Riwayat materi dilihat">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="40.0" layoutY="339.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="748.0" />
+                  <HBox layoutX="21.0" layoutY="43.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="281.0" prefWidth="1039.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="211.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                           <opaqueInsets>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="170.0" pickOnBounds="true">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" top="7.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../images/gedung%20baru.png" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="139.0" style="-fx-background-color: transparent;" text="Konstruksi GreenJobs" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="custom-text" text="Konstruksi yang ramah lingkungan mengurangi dampak negatif lingkungan dan meningkatkan efisiensi sumber daya." textAlignment="CENTER" wrappingWidth="147.33678436279297">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="SansSerif" size="12.0" />
+                                 </font>
+                              </Text>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="181.0" />
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="143.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/heart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="173.0" prefWidth="2.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                           <opaqueInsets>
+                              <Insets left="3.0" />
+                           </opaqueInsets>
+                        </Separator>
+                        <VBox alignment="TOP_CENTER" prefHeight="251.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                           <opaqueInsets>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="107.0" fitWidth="158.0" pickOnBounds="true">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../Images/2454064366.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: transparent;" text="Arsitektur Desain " textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <HBox prefHeight="108.0" prefWidth="182.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tekshitam" text="Desain berkelanjutan adalah pendekatan dalam arsitektur yang fokus pada efisiensi penggunaan sumber daya" textAlignment="CENTER" wrappingWidth="157.73680896759106">
+                                       <HBox.margin>
+                                          <Insets left="12.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="SansSerif" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="143.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/heart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="173.0" prefWidth="2.0">
+                           <HBox.margin>
+                              <Insets bottom="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <VBox alignment="TOP_CENTER" prefHeight="211.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                           <opaqueInsets>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="170.0" pickOnBounds="true">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" top="7.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../Images/WhatsApp%20Image%202024-07-07%20at%2022.54.38_a4079100.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: transparent;" text="Teknik Konstruksi Hijau">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="custom-text" text="Metode konstruksi yang efisien dan ramah lingkungan guna mengurangi limbah dan memanfaatkan teknologi" textAlignment="CENTER" wrappingWidth="135.33678436279297">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="SansSerif" size="12.0" />
+                                 </font>
+                              </Text>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="181.0" />
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="143.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/heart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator maxWidth="-Infinity" orientation="VERTICAL" prefHeight="173.0" prefWidth="2.0">
+                           <HBox.margin>
+                              <Insets bottom="11.0" right="7.0" top="11.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <VBox alignment="TOP_CENTER" prefHeight="273.0" prefWidth="182.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                           <opaqueInsets>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="170.0" pickOnBounds="true">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" top="7.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../Images/WhatsApp%20Image%202024-07-07%20at%2022.55.15_3f8a584b.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: transparent;" text="Energi Ramah Lingkungan">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="custom-text" text="Sumber energi yang minim dampak negatif terhadap lingkungan, mengurangi konservasi sumber daya alam" textAlignment="CENTER" wrappingWidth="142.53673553466797">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="SansSerif" size="12.0" />
+                                 </font>
+                              </Text>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="181.0" />
+                              <Pane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="143.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/heart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="7.0" top="7.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Separator orientation="VERTICAL" prefHeight="173.0" prefWidth="2.0">
+                           <HBox.margin>
+                              <Insets bottom="11.0" left="7.0" right="7.0" top="11.0" />
+                           </HBox.margin>
+                        </Separator>
+                        <VBox alignment="TOP_CENTER" prefHeight="262.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                           <opaqueInsets>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </opaqueInsets>
+                           <children>
+                              <ImageView fitHeight="106.0" fitWidth="170.0" pickOnBounds="true">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" top="7.0" />
+                                 </VBox.margin>
+                                 <image>
+                                    <Image url="@../Images/materialberkelanjutan.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Material Berkelanjutan">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tekshitam" text="Penggunaan material ramah lingkungan untuk mengurangi dampak negatif lingkungan " textAlignment="CENTER" wrappingWidth="142.13677215576172">
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="SansSerif" size="12.0" />
+                                 </font>
+                              </Text>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="181.0" />
+                              <Pane prefHeight="46.0" prefWidth="182.0">
+                                 <children>
+                                    <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="143.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/heart.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="7.0" top="7.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <VBox focusTraversable="true" layoutX="9.0" layoutY="89.0" prefHeight="711.0" prefWidth="234.0" style="-fx-background-color: #fafafa;">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="234.0" style="-fx-background-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/homev2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="berandaButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#riwayatKeBeranda" prefHeight="38.0" prefWidth="158.0" style="-fx-background-color: trasnparatn;" text="Beranda">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="50.0" prefWidth="234.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="116.0" text="Pembelajaran">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="198.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/kategori%20khusus.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="kursusButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#riwayatKeKursus" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" stylesheets="@style/style.css" text="Kursus">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="234.0" style="-fx-background-radius: 10px;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/materi%20dan%20video.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="materiButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#riwayatKeMateri" prefHeight="1.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="Materi &amp; Video">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="198.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2016.56.53_37cfff78.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="ujianButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#riwayatKeUjian" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" text="Ujian">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="149.0" prefWidth="234.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="53.0" text="Karir">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="234.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2016.55.44_24649401.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sertifikatButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#riwayatKeSertifikat" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" text="Sertifikat">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="234.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2016.57.42_2b9a5565.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="pekerjaanButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#riwayatKePekerjaan" prefHeight="38.0" prefWidth="154.0" style="-fx-background-color: trasnparatn;" text="Pekerjaan">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="198.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2017.52.44_e6b74c6a.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="nasihatButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#riwayatKeNasihat" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" text="Nasihat Karir">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="190.0" prefWidth="234.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="89.0" text="Aktifitas">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="234.0" style="-fx-background-radius: 10px;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/heart.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sukaButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#riwayatKeSuka" prefHeight="41.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" stylesheets="@style/style.css" text="Suka">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="234.0" style="-fx-background-color: #597445; -fx-background-radius: 10px;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/riwayat.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="55.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="Riwayat" textFill="WHITE">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

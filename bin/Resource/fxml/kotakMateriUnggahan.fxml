@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="0.0" style="-fx-background-radius: 14px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="259.0" prefWidth="182.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+         <opaqueInsets>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </opaqueInsets>
+         <children>
+            <ImageView fitHeight="106.0" fitWidth="170.0" pickOnBounds="true">
+               <VBox.margin>
+                  <Insets bottom="7.0" top="7.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../Images/eccocareer.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="24.0" prefWidth="126.0" text="Judul Materi Unggah" />
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="181.0" />
+            <Label prefHeight="71.0" prefWidth="162.0" text="Deskripsi Singkat Materi" wrapText="true" />
+            <Pane prefHeight="44.0" prefWidth="182.0">
+               <children>
+                  <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="143.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/heart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

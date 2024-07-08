@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoginPertama" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginPertamaController">
+   <children>
+      <HBox alignment="CENTER" layoutX="2.0" layoutY="95.0" prefHeight="602.0" prefWidth="1534.0">
+         <children>
+            <HBox fx:id="fullHbox" prefHeight="550.0" prefWidth="434.0" style="-fx-background-color: CCD3CA;">
+               <children>
+                  <Pane fx:id="kiriPane" prefHeight="550.0" prefWidth="432.0" style="-fx-background-color: #658147;">
+                     <children>
+                        <ImageView fitHeight="223.0" fitWidth="315.0" layoutX="59.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/LogoBaruEcoCareer.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox fx:id="semuaHbox" prefHeight="550.0" prefWidth="458.0">
+               <children>
+                  <Pane fx:id="kananPane" prefHeight="550.0" prefWidth="522.0" style="-fx-background-color: white;">
+                     <children>
+                        <Button fx:id="masukSebagaiKonselorButton" layoutX="115.0" layoutY="323.0" mnemonicParsing="false" onAction="#klikKonselor" prefHeight="45.0" prefWidth="267.0" style="-fx-background-color: #658147; -fx-border-color: #686D76; -fx-border-radius: 1200; -fx-background-radius: 1200;" text="Masuk Sebagai Konselor" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="masukSebagaiTutorButton" layoutX="115.0" layoutY="252.0" mnemonicParsing="false" onAction="#klikTutor" prefHeight="45.0" prefWidth="267.0" style="-fx-background-color: #658147; -fx-border-color: #686D76; -fx-border-radius: 1200; -fx-background-radius: 1200;" text="Masuk Sebagai Tutor" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="masukSebagaiPesertaButton" layoutX="115.0" layoutY="186.0" mnemonicParsing="false" onAction="#klikPeserta" prefHeight="45.0" prefWidth="267.0" style="-fx-background-color: #658147; -fx-border-color: #686D76; -fx-border-radius: 1200; -fx-background-radius: 1200;" text="Masuk Sebagai Peserta" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

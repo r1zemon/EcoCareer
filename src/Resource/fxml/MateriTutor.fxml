@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-9.0" layoutY="-1.0" prefHeight="744.0" prefWidth="1550.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="9.0" layoutY="1.0" prefHeight="88.0" prefWidth="1540.0" style="-fx-background-color: #658147;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="234.0" style="-fx-background-color: #658147;" text="EcoCareer" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Md BT Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="37.0" prefWidth="0.0" />
+                  <Pane prefHeight="74.0" prefWidth="634.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextField layoutX="31.0" layoutY="22.0" maxWidth="-Infinity" prefHeight="45.0" prefWidth="187.0" promptText="Pencarian" styleClass="pencarian" stylesheets="@../style/style.css">
+                           <font>
+                              <Font name="SansSerif Bold" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="88.0" prefWidth="241.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: trasnparatn;" text="Nama Tutor" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif" size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/profil%20v.2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane layoutX="241.0" layoutY="93.0" prefHeight="696.0" prefWidth="1308.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <HBox layoutX="14.0" layoutY="5.0" prefHeight="45.0" prefWidth="585.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: transparent;" text="Materi &amp; Video">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="288.0" layoutY="142.0" prefHeight="603.0" prefWidth="1207.0">
+               <content>
+                  <AnchorPane prefHeight="526.0" prefWidth="1172.0">
+                     <children>
+                        <Pane layoutX="-1.0" layoutY="1.0" prefHeight="599.0" prefWidth="1163.0" />
+                        <Pane layoutX="9.0" layoutY="5.0" prefHeight="558.0" prefWidth="1163.0" style="-fx-background-color: #fafafa;">
+                           <children>
+                              <HBox layoutX="53.0" layoutY="63.0" prefHeight="413.0" prefWidth="1083.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                 <children>
+                                    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="1083.0">
+                                       <children>
+                                          <TextField alignment="TOP_LEFT" layoutX="39.0" layoutY="74.0" prefHeight="254.0" prefWidth="440.0" promptText="Masukkan deskripsi singkat materi" style="-fx-background-radius: 5px;" styleClass="black-border" stylesheets="@../style/style.css">
+                                             <font>
+                                                <Font name="SansSerif" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField layoutX="39.0" layoutY="23.0" prefHeight="36.0" prefWidth="286.0" promptText="Masukkan Judul materi" style="-fx-background-radius: 5px;" styleClass="black-border" stylesheets="@../style/style.css">
+                                             <font>
+                                                <Font name="SansSerif" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Button layoutX="825.0" layoutY="240.0" mnemonicParsing="false" style="-fx-background-color: #597445; -fx-background-radius: 9px;" text="Unggah Gambar" textFill="WHITE">
+                                             <font>
+                                                <Font name="SansSerif" size="14.0" />
+                                             </font>
+                                          </Button>
+                                          <Button layoutX="343.0" layoutY="83.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="25.0" style="-fx-background-color: transparent;" />
+                                          <ImageView fitHeight="37.0" fitWidth="33.0" layoutX="339.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images/file.png" />
+                                             </image>
+                                          </ImageView>
+                                          <HBox layoutX="710.0" layoutY="32.0" prefHeight="186.0" prefWidth="346.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                             <children>
+                                                <Pane prefHeight="186.0" prefWidth="349.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;">
+                                                   <children>
+                                                      <ImageView fitHeight="172.0" fitWidth="330.0" layoutX="9.0" layoutY="6.0" pickOnBounds="true">
+                                                         <image>
+                                                            <Image url="@../images/bg.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </Pane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <Button layoutX="1081.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: #597445; -fx-background-radius: 9px;" text="Kirim" textFill="WHITE">
+                                 <font>
+                                    <Font name="SansSerif" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <VBox focusTraversable="true" layoutX="8.0" layoutY="88.0" prefHeight="703.0" prefWidth="234.0" style="-fx-background-color: #fafafa;">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="234.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/home.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="158.0" style="-fx-background-color: trasnparatn;" text="Beranda">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="50.0" prefWidth="234.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="116.0" text="Pembelajaran">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="198.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/kategori%20khusus.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" stylesheets="@style/style.css" text="Kursus">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="234.0" style="-fx-background-color: #597445; -fx-background-radius: 10px;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/materi%20dan%20video.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="1.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="Materi &amp; Video" textFill="WHITE">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="198.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2016.56.53_37cfff78.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" text="Ujian">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="149.0" prefWidth="234.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="53.0" text="Karir">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="234.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2016.55.44_24649401.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" text="Sertifikat">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="buatAkunTutor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginTutor.BuatAkunTutorController">
+   <children>
+      <HBox alignment="CENTER" layoutX="2.0" layoutY="94.0" prefHeight="602.0" prefWidth="1538.0">
+         <children>
+            <HBox fx:id="allPane" prefHeight="550.0" prefWidth="434.0" style="-fx-background-color: CCD3CA;">
+               <children>
+                  <Pane fx:id="kiriPane" prefHeight="550.0" prefWidth="432.0" style="-fx-background-color: #658147;">
+                     <children>
+                        <ImageView fitHeight="144.0" fitWidth="243.0" layoutX="107.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Logo/Screenshot_2024-06-24_113046-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox fx:id="semuaPane" prefHeight="550.0" prefWidth="458.0">
+               <children>
+                  <Pane fx:id="kananPane" prefHeight="536.0" prefWidth="458.0" style="-fx-background-color: white;">
+                     <children>
+                        <Text fx:id="buatAkunText" layoutX="161.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buat Akun" wrappingWidth="152.32849121093727">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="namaPenggunaText" layoutX="89.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Pengguna" wrappingWidth="113.928466796875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="kataSandiText" layoutX="91.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kata Sandi" wrappingWidth="113.928466796875">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="namaPenggunaField" layoutX="91.0" layoutY="130.0" prefHeight="45.0" prefWidth="294.0" style="-fx-background-color: transparent; -fx-border-color: #686D76; -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 1204; -fx-font-color: #0000;" />
+                        <TextField fx:id="emailField" layoutX="91.0" layoutY="305.0" prefHeight="45.0" prefWidth="294.0" style="-fx-background-color: transparent; -fx-border-color: #686D76; -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 1204; -fx-font-color: #0000;" />
+                        <Button fx:id="buatAkunTutorButton" layoutX="104.0" layoutY="391.0" mnemonicParsing="false" onAction="#klikMasukAkun" prefHeight="45.0" prefWidth="267.0" style="-fx-background-radius: 50; -fx-border-color: #686D76; -fx-background-color: #658147; -fx-border-radius: 50;" text="Buat Akun Tutor" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <styleClass>
+                              <String fx:value="cursor_hand" />
+                              <String fx:value="loginButton" />
+                           </styleClass>
+                        </Button>
+                        <Button fx:id="masukTutorButton" layoutX="266.0" layoutY="465.0" mnemonicParsing="false" onAction="#klikMasukTutor" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: transparent;" text="Masuk" textFill="#02afff">
+                           <padding>
+                              <Insets right="8.0" />
+                           </padding>
+                        </Button>
+                        <Text fx:id="sudahPunyaAkunTutor" layoutX="177.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudah punya akun?" textAlignment="CENTER" />
+                        <TextField fx:id="kataSandiField" layoutX="90.0" layoutY="217.0" prefHeight="45.0" prefWidth="294.0" style="-fx-background-color: transparent; -fx-border-color: #686D76; -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 1204; -fx-font-color: #0000;" />
+                        <Text fx:id="emailText" layoutX="91.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

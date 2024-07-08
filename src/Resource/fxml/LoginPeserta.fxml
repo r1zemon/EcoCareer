@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="akun" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginPeserta.LoginPesertaController">
+   <children>
+      <HBox fx:id="semuaHbox" layoutX="434.0" prefHeight="550.0" prefWidth="458.0" />
+      <HBox alignment="CENTER" layoutX="-1.0" layoutY="95.0" prefHeight="602.0" prefWidth="1542.0">
+         <children>
+            <HBox fx:id="allHbox" prefHeight="550.0" prefWidth="434.0" style="-fx-background-color: CCD3CA;">
+               <children>
+                  <Pane fx:id="kiriPane" prefHeight="550.0" prefWidth="432.0" style="-fx-background-color: #658147;">
+                     <children>
+                        <ImageView fitHeight="223.0" fitWidth="315.0" layoutX="59.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/LogoBaruEcoCareer.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane fx:id="kananPane" prefHeight="550.0" prefWidth="522.0" style="-fx-background-color: white;">
+               <children>
+                  <Text fx:id="masukText" layoutX="179.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Masuk" wrappingWidth="113.92846679687477">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="emailPenggunaText" layoutX="89.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="113.928466796875">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="kataSandi" layoutX="89.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kata Sandi" wrappingWidth="113.928466796875">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="namaPenggunaField" layoutX="89.0" layoutY="210.0" prefHeight="45.0" prefWidth="294.0" style="-fx-background-color: transparent; -fx-border-color: #686D76; -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 1204; -fx-font-color: #0000;" />
+                  <TextField fx:id="kataSandiField" layoutX="89.0" layoutY="300.0" prefHeight="45.0" prefWidth="294.0" style="-fx-background-color: transparent; -fx-border-color: #686D76; -fx-border-width: 1px 1px 1px 1px; -fx-border-radius: 1204; -fx-font-color: #0000;" />
+                  <Button fx:id="masukPesertaButton" layoutX="102.0" layoutY="413.0" mnemonicParsing="false" onAction="#klikPesertaKeBeranda" prefHeight="45.0" prefWidth="267.0" style="-fx-background-radius: 50; -fx-border-color: #686D76; -fx-background-color: #658147; -fx-border-radius: 50;" text="Masuk Sebagai Peserta" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="cursor_hand" />
+                        <String fx:value="loginButton" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="buatAkunButton" layoutX="254.0" layoutY="465.0" mnemonicParsing="false" onAction="#clickBuatAkun" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: white;" text="Buat Akun" textFill="#02afff" />
+                  <Text fx:id="blmPunyaAkunText" layoutX="157.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="belum punya akun? " textAlignment="CENTER" />
+                  <ImageView fitHeight="25.0" fitWidth="32.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/kembali%20(hitam).png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="kembaliButton" layoutY="14.0" mnemonicParsing="false" onAction="#kembaliKePertama" prefHeight="37.0" prefWidth="54.0" style="-fx-background-color: transparent;" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="berandaPeserta" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#klikKeBerandaPeserta" prefHeight="800.0" prefWidth="1540.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginPeserta.BerandaPesertaController">
+   <children>
+      <Pane layoutX="-9.0" layoutY="-1.0" prefHeight="744.0" prefWidth="1550.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="9.0" layoutY="1.0" prefHeight="88.0" prefWidth="1540.0" style="-fx-background-color: #658147;">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="234.0" style="-fx-background-color: #658147;" text="EcoCareer" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Md BT Bold" size="28.0" />
+                     </font>
+                  </Label>
+                  <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="37.0" prefWidth="0.0" />
+                  <Pane prefHeight="74.0" prefWidth="634.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <TextField layoutX="31.0" layoutY="22.0" maxWidth="-Infinity" prefHeight="45.0" prefWidth="187.0" promptText="Pencarian" styleClass="pencarian" stylesheets="@../style/style.css">
+                           <font>
+                              <Font name="SansSerif Bold" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="88.0" prefWidth="241.0">
+                     <children>
+                        <Button fx:id="namaPesertaButton" mnemonicParsing="false" onAction="#berandaKeProfilPeserta" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: trasnparatn;" text="Nama Peserta" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif" size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/profil%20v.2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets right="15.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+            <Pane layoutX="247.0" layoutY="93.0" prefHeight="54.0" prefWidth="1302.0">
+               <children>
+                  <HBox layoutX="14.0" layoutY="5.0" prefHeight="45.0" prefWidth="585.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="122.0" style="-fx-background-color: transparent;" text="Beranda">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <ScrollPane layoutX="288.0" layoutY="142.0" prefHeight="659.0" prefWidth="1207.0">
+               <content>
+                  <AnchorPane prefHeight="1406.0" prefWidth="1172.0">
+                     <children>
+                        <Pane layoutX="-1.0" layoutY="1.0" prefHeight="888.0" prefWidth="1163.0" />
+                        <Pane layoutX="9.0" layoutY="5.0" prefHeight="927.0" prefWidth="1163.0" style="-fx-background-color: #fafafa;">
+                           <children>
+                              <HBox layoutX="29.0" layoutY="318.0" prefHeight="384.0" prefWidth="638.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                 <children>
+                                    <Pane prefHeight="452.0" prefWidth="596.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;">
+                                       <children>
+                                          <Text layoutX="35.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kursus Terpopuler" wrappingWidth="163.24218749999955">
+                                             <font>
+                                                <Font name="Futura Md BT Medium" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox layoutX="19.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="281.0" prefWidth="557.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="211.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                                   <opaqueInsets>
+                                                      <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <ImageView fitHeight="106.0" fitWidth="170.0" pickOnBounds="true">
+                                                         <VBox.margin>
+                                                            <Insets bottom="7.0" top="7.0" />
+                                                         </VBox.margin>
+                                                         <image>
+                                                            <Image url="@../images/Green%20Building.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" style="-fx-background-color: transparent;" text="Konstruksi Ramah Lingkungan" textAlignment="CENTER" wrapText="true">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="custom-text" text="Konstruksi hijau adalah praktik pembangunan yang ramah lingkungan dan berkelanjutan." textAlignment="CENTER" wrappingWidth="142.13677215576172">
+                                                         <VBox.margin>
+                                                            <Insets top="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="SansSerif" size="12.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="181.0" />
+                                                   </children>
+                                                </VBox>
+                                                <Separator orientation="VERTICAL" prefHeight="173.0" prefWidth="2.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="15.0" top="15.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <VBox alignment="TOP_CENTER" prefHeight="251.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                                   <opaqueInsets>
+                                                      <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                                   </opaqueInsets>
+                                                   <children>
+                                                      <ImageView fitHeight="107.0" fitWidth="158.0" pickOnBounds="true">
+                                                         <VBox.margin>
+                                                            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                                         </VBox.margin>
+                                                         <image>
+                                                            <Image url="@../images/manajemen.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="43.0" prefWidth="162.0" style="-fx-background-color: transparent;" text="Manajemen Produksi Ayam" textAlignment="CENTER" wrapText="true">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tekshitam" text="proses pengelolaan terintegrasi produksi ayam yang efisien, sehat, dan menguntungkan" textAlignment="CENTER" wrappingWidth="151.3368455886848">
+                                                               <HBox.margin>
+                                                                  <Insets left="13.0" top="9.0" />
+                                                               </HBox.margin>
+                                                               <font>
+                                                                  <Font name="SansSerif" size="12.0" />
+                                                               </font>
+                                                            </Text>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                                <Separator orientation="VERTICAL" prefHeight="173.0" prefWidth="2.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="15.0" top="15.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <VBox alignment="TOP_CENTER" prefHeight="211.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                                   <opaqueInsets>
+                                                      <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                                   </opaqueInsets>
+                                                   <children>
+                                                      <ImageView fitHeight="106.0" fitWidth="175.0" pickOnBounds="true">
+                                                         <VBox.margin>
+                                                            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                                         </VBox.margin>
+                                                         <image>
+                                                            <Image url="@../images/kesehatan%20hewan.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: transparent;" text="Kesehatan Ternak">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <HBox prefHeight="75.0" prefWidth="190.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tekshitam" text="aspek kritis dalam peternakan yg mencakup segala upaya untuk memastikan ternak tetap produktif" textAlignment="CENTER" wrappingWidth="162.93663799762726">
+                                                               <HBox.margin>
+                                                                  <Insets bottom="7.0" left="11.0" top="7.0" />
+                                                               </HBox.margin>
+                                                               <font>
+                                                                  <Font name="SansSerif" size="12.0" />
+                                                               </font>
+                                                            </Text>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="693.0" layoutY="315.0" prefHeight="386.0" prefWidth="435.0" style="-fx-background-color: #658147; -fx-background-radius: 15px;">
+                                 <children>
+                                    <Pane prefHeight="382.0" prefWidth="454.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                       <children>
+                                          <Text layoutX="32.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Materi Terpopuler" wrappingWidth="157.2222900390625">
+                                             <font>
+                                                <Font name="Futura Md BT Medium" size="18.0" />
+                                             </font>
+                                          </Text>
+                                          <HBox layoutX="25.0" layoutY="59.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="281.0" prefWidth="352.0">
+                                             <children>
+                                                <VBox alignment="TOP_CENTER" prefHeight="211.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                                   <opaqueInsets>
+                                                      <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                                   </opaqueInsets>
+                                                   <HBox.margin>
+                                                      <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                                   </HBox.margin>
+                                                   <children>
+                                                      <ImageView fitHeight="106.0" fitWidth="170.0" pickOnBounds="true">
+                                                         <VBox.margin>
+                                                            <Insets bottom="7.0" top="7.0" />
+                                                         </VBox.margin>
+                                                         <image>
+                                                            <Image url="@../images/gedung%20baru.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="142.0" style="-fx-background-color: transparent;" text="Konstruksi GreenJobs" textAlignment="CENTER" wrapText="true">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="custom-text" text="Konstruksi yang ramah lingkungan mengurangi dampak negatif " textAlignment="CENTER" wrappingWidth="142.13677215576172">
+                                                         <VBox.margin>
+                                                            <Insets top="7.0" />
+                                                         </VBox.margin>
+                                                         <font>
+                                                            <Font name="SansSerif" size="12.0" />
+                                                         </font>
+                                                      </Text>
+                                                      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="181.0" />
+                                                   </children>
+                                                </VBox>
+                                                <Separator orientation="VERTICAL" prefHeight="173.0" prefWidth="2.0">
+                                                   <HBox.margin>
+                                                      <Insets bottom="15.0" top="15.0" />
+                                                   </HBox.margin>
+                                                </Separator>
+                                                <VBox alignment="TOP_CENTER" prefHeight="251.0" prefWidth="181.0" style="-fx-background-color: #ffffff; -fx-background-radius: 14;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                                                   <opaqueInsets>
+                                                      <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                                   </opaqueInsets>
+                                                   <children>
+                                                      <ImageView fitHeight="107.0" fitWidth="158.0" pickOnBounds="true">
+                                                         <VBox.margin>
+                                                            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                                                         </VBox.margin>
+                                                         <image>
+                                                            <Image url="@../Images/2454064366.jpg" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Button alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: transparent;" text="Arsitektur Desain">
+                                                         <font>
+                                                            <Font name="System Bold" size="12.0" />
+                                                         </font>
+                                                      </Button>
+                                                      <HBox prefHeight="100.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="tekshitam" text="ilmu yang mempelajari kebutuhan nutrisi hewan ternak untuk mendukung pertumbuhan" textAlignment="CENTER" wrappingWidth="151.3368455886848">
+                                                               <HBox.margin>
+                                                                  <Insets left="13.0" top="9.0" />
+                                                               </HBox.margin>
+                                                               <font>
+                                                                  <Font name="SansSerif" size="12.0" />
+                                                               </font>
+                                                            </Text>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox prefHeight="100.0" prefWidth="200.0" />
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <ImageView fitHeight="277.0" fitWidth="900.0" layoutX="130.0" layoutY="17.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-07-03%20at%2023.41.14_4cc0877c.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <HBox layoutX="36.0" layoutY="726.0" prefHeight="223.0" prefWidth="1101.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;" styleClass="shadow-effect" stylesheets="@../style/style.css">
+                           <children>
+                              <Pane prefHeight="223.0" prefWidth="434.0">
+                                 <children>
+                                    <Text layoutX="32.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tutor" wrappingWidth="157.2222900390625">
+                                       <font>
+                                          <Font name="Futura Md BT Medium" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <VBox layoutX="32.0" layoutY="58.0" prefHeight="134.0" prefWidth="121.0" style="-fx-background-color: #fafafa; -fx-background-radius: 7px;" styleClass="shadow-effect">
+                                       <children>
+                                          <ImageView fitHeight="95.0" fitWidth="97.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@../Images/profil%20peserta.jpg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" left="11.0" right="3.0" top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Pane prefHeight="26.0" prefWidth="163.0">
+                                             <children>
+                                                <Text layoutX="10.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Alfia Noor Sabhrina" wrappingWidth="110.8422241210933" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="165.0" layoutY="58.0" prefHeight="134.0" prefWidth="121.0" style="-fx-background-color: #fafafa; -fx-background-radius: 7px;" styleClass="shadow-effect">
+                                       <children>
+                                          <ImageView fitHeight="95.0" fitWidth="97.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@../Images/profil%20peserta.jpg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" left="11.0" right="3.0" top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Pane prefHeight="26.0" prefWidth="163.0">
+                                             <children>
+                                                <Text layoutX="22.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Widya Rahma" wrappingWidth="110.8422241210933" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="298.0" layoutY="58.0" prefHeight="134.0" prefWidth="121.0" style="-fx-background-color: #fafafa; -fx-background-radius: 7px;" styleClass="shadow-effect">
+                                       <children>
+                                          <ImageView fitHeight="95.0" fitWidth="97.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@../Images/profil%20cowo.jpg" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets bottom="3.0" left="11.0" right="3.0" top="5.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Pane prefHeight="26.0" prefWidth="163.0">
+                                             <children>
+                                                <Text layoutX="16.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tri Andi Saputra" wrappingWidth="110.8422241210933" />
+                                             </children>
+                                          </Pane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <VBox focusTraversable="true" layoutX="7.0" layoutY="89.0" prefHeight="711.0" prefWidth="234.0" style="-fx-background-color: #fafafa;">
+               <children>
+                  <Separator prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="38.0" prefWidth="234.0" style="-fx-background-color: #597445; -fx-background-radius: 10px;">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/homev2.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="38.0" prefWidth="158.0" style="-fx-background-color: trasnparatn;" text="Beranda" textFill="WHITE">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="50.0" prefWidth="234.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="116.0" text="Pembelajaran">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="198.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/kategori%20khusus.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="kursusButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#berandaKeKursusPeserta" prefHeight="36.0" prefWidth="164.0" style="-fx-background-color: trasnparatn;" stylesheets="@style/style.css" text="Kursus">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="234.0" style="-fx-background-color: transparent; -fx-background-radius: 10px;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/materi%20dan%20video.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="materiButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#berandaKeMateriPeserta" prefHeight="1.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="Materi &amp; Video">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="198.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2016.56.53_37cfff78.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="ujianButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#berandaKeUjianPeserta" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" text="Ujian">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="149.0" prefWidth="234.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="53.0" text="Karir">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="234.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2016.55.44_24649401.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sertifikatButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#berandaKeSertifikatPeserta" prefHeight="38.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" text="Sertifikat">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="234.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2016.57.42_2b9a5565.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="pekerjaanButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#berandaKePekerjaanPeserta" prefHeight="38.0" prefWidth="154.0" style="-fx-background-color: trasnparatn;" text="Pekerjaan">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="36.0" prefWidth="198.0">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/WhatsApp%20Image%202024-06-22%20at%2017.52.44_e6b74c6a.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="nasihatKarirButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#berandaKeNasihatPeserta" prefHeight="36.0" prefWidth="156.0" style="-fx-background-color: trasnparatn;" text="Nasihat Karir">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox prefHeight="190.0" prefWidth="234.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="100.0" text="Aktifitas">
+                           <font>
+                              <Font name="SansSerif" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="2.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="42.0" prefWidth="234.0" style="-fx-background-radius: 10px;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/heart.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sukaButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#berandaKeSukaMateri" prefHeight="55.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="Suka">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="234.0" style="-fx-background-color: transparent; -fx-background-radius: 10px;">
+                           <children>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/riwayat.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="riwayatButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#berandaKeRiwayatPeserta" prefHeight="55.0" prefWidth="158.0" style="-fx-background-color: transparent;" text="Riwayat">
+                                 <font>
+                                    <Font name="SansSerif" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
